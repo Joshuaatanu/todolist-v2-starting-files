@@ -4,7 +4,11 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
 const _ = require("lodash");
-mongoose.connect('mongodb+srv://admin-joshua:Atanuje99@cluster0.fgvv9ms.mongodb.net/todolistDB', {
+mongoose.connect('mongodb+srv://admin-joshua:Atanuje99@cluster0.fgvv9ms.mongodb.net/todolistDB?retryWrites=true&w=majority',(err)=>{
+  if (err) {
+    console.log(err);
+  }else{console.log("connecton succeful");}
+}, {
   useNewUrlParser: true
 })
 
