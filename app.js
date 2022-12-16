@@ -4,7 +4,7 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
 const _ = require("lodash");
-mongoose.connect('mongodb://127.0.0.1:27017/todolistDB', {
+mongoose.connect('mongodb+srv://admin-joshua:Atanuje99@cluster0.fgvv9ms.mongodb.net/todolistDB', {
   useNewUrlParser: true
 })
 
